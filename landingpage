@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="" ng-controller="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TASTE | {{username}} </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://jaysalvat.github.io/vegas/releases/latest/vegas.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bipinvoidoflimbo.css">
+  <script src="jscript/jquery/jquery.min.js" charset="utf-8"></script>
+  <script src="jscript/angular/angular.min.js" charset="utf-8"></script>
+  <script src="jscript/pooper/pooper.min.js" charset="utf-8"></script>
+  <script src="jscript/tooltip/tooltip.min.js" charset="utf-8"></script>
+  <script src="https://jaysalvat.github.io/vegas/releases/latest/vegas.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="page-container body">
+
+    <div id="slide0" class="slide header">
+      <div class="container">
+        <h1 class="title_h1">TASTE </h1>
+        <h2 class="title_h2">One stop Tourist Site</h2>
+        <p class="title_p"> Believe yourself</p>
+      </div>
+    </div>
+
+    <div id="slide1" class="slide">
+      <div class="title">
+        <h1>Travelogue</h1>
+        <p>         Give life to your experience, share your travel experience. Make a blog, add pictures you took, videos you made and much more. Use your creative ideas to express your travel experience to the world. </p>
+      </div>
+    </div>
+
+    <div id="slide2" class="slide">
+      <div class="title">
+        <h1>Atlas</h1>
+        <p>         Find the world map in one place.(Story and trave locations attached with map.) </p>
+      </div>
+      <img class="box_img" src="/img/10.jpg">
+      <img class="box_img" src="/img/11.jpg">
+    </div>
+
+    <div id="slide3" class="slide">
+      <div class="title">
+        <h1>Schedule</h1>
+        <p>         Make travel plan book fligts meet travel agencies and much more.</p>
+      </div>
+    </div>
+
+    <div id="slide4" class="slide">
+      <div class="title">
+        <h1>Temptation</h1>
+        <p>         See and/or share the contents that makes you ask yourself twice what you saw.</p>
+      </div>
+      <img class="box_img" src="/img/1.jpg">
+      <img class="box_img" src="/img/21.jpg">
+    </div>
+
+    <div id="slide5" class="slide">
+      <div class="title">
+        <h1>Experience</h1>
+        <p>         Don`t worry if you don`t have time to go out. Sit and enjoy the contents of other travellers</p>
+      </div>
+    </div>
+
+    <div id="slide6" class="slide header">
+      <div class="container_pics">
+
+        <div class="item ">
+          <img src="/img/1.jpg">
+          <p> Nowhere </p>
+        </div>
+
+        <div class="item ">
+          <img src="/img/1.jpg">
+          <p> Safari Hurghada Desert </p>
+        </div>
+        <br>
+        <span>
+          <div class="item ">
+            <img src="/img/1.jpg">
+            <p>Pyramids</p>
+          </div>
+
+          <div class="item ">
+            <img src="/img/1.jpg">
+            <p>The Desert Breath </p>
+          </div>
+
+          <div class="item ">
+            <img src="/img/1.jpg">
+            <p>Safari Egypt</p>
+          </div>
+          <span>
+            <br>
+
+            <div class="item">
+              <img src="/img/1.jpg">
+              <p>Moto Safari</p>
+            </div>
+
+            <div class="item">
+              <img src="/img/1.jpg">
+              <p>Red Sea Diving Holidays </p>
+            </div>
+
+            <div class="item">
+              <img src="/img/1.jpg">
+              <p>GOUNA</p>
+            </div>
+
+            <div class="item">
+              <img src="/img/1.jpg">
+              <p> MARSA MATROUH </p>
+            </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="signature hidden">Void of Limbo</div>
+  <div id="user_interface">
+    <ul id="menu" class="glass-sculpted">
+      <li><a href="#slide0">Home</a></li>
+      <li><a href="#slide1">Travelogue</a></li>
+      <li><a href="#slide2">Atlas</a></li>
+      <li><a href="#slide3">Schedule</a></li>
+      <li><a href="#slide4">Temptation</a></li>
+      <li><a href="#slide5">Experience</a></li>
+      <li><a href="#slide6">Contact</a></li>
+    </ul>
+    <a href="#menu" id="toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar icon-right"></span>
+      <span class="icon-bar icon-left"></span>
+    </a>
+  </div>
+  <script src="jscript/bipinvoidoflimbo.js" charset="utf-8"></script>
+</body>
+
+</html>
