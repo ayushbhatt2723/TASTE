@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+   function Reset()
+   {
+     document.frm.nametxt.value="";
+	 document.frm.emailtxt.value="";
+	 document.frm.passtxt.value="";
+	 document.frm.daytxt.value.selectedIndex=-1;
+	 document.frm.monthtxt.value.selectedIndex=-1;
+	 document.frm.yeartxt.value.selectedIndex=-1;
+	 document.frm.gendertxt.value.selectedIndex=-1;
+   }
+   function valid()
+   {
+     var name,email,pass,day,month,year,gender,count,min;
+	 name=document.frm.nametxt.value;
+	 email=document.frm.emailtxt.value;
+	 pass=document.frm.passtxt.value;
+	 day=document.frm.daytxt.value;
+	 month=document.frm.monthtxt.value;
+	 year=document.frm.yeartxt.value;
+	 gender=document.frm.gendertxt.value;
+	 count=email.indexOf("@");
+	 min=email.indexOf(".");
+	 if(name=="" || email=="" || pass=="" || day==-1|| month==-1|| year==-1 || gender==-1)
+	 {
+	   alert("fill all the details");
+	 }
+	 else if(count== -1 || min== -1)
+	 {
+	   alert("Invalid Email ID");
+	 }
+	 else if(pass.length>12)
+	 {
+	   alert("your password is too long");
+	 }
+	 else
+	 {
+	  alert("Form Submitted Successfully");
+	 }
+   }
+</script>
+</head>
+<body>
+<form name ="frm">
+  Name: <input type="text" name="nametxt" />
+  <br/> <br/>
+  Email ID: <input type="text" name="emailtxt" />
+  <br/>  <br/>
+  Password: <input type="password" name="passtxt" />
+  <br/>  <br/>
+  Date of Birth:<select name="daytxt">
+                  <option value="-1">--Day--</option>
+				  <option value="01">01 </option>
+				  <option value="02">02 </option>
+				  <option value="03">03 </option>
+				  <option value="04">04 </option>
+				  <option value="05">05 </option>
+				  <option value="06">06 </option>
+				  <option value="07">07 </option>
+				  <option value="08">08 </option>
+				</select>
+
+                <select name="monthtxt">
+				  <option value="-1">--Month--</option>
+				  <option value="1">JAN </option>
+				  <option value="2">FEB </option>
+				  <option value="3">MAR </option>
+				  <option value="4">APR </option>
+				  <option value="5">MAY </option>
+				  <option value="6">JUNE </option>
+				  <option value="7">JULY </option>
+				  <option value="8">SEP </option>
+				  <option value="9">OCT </option>
+				  <option value="10">NOV </option>
+				  <option value="11">DEC </option>
+				</select>
+
+				<select name="yeartxt">
+				  <option value="-1">--Year--</option>
+				  <option value="1">2017 </option>
+				  <option value="2">2016 </option>
+				  <option value="3">2015 </option>
+				  <option value="4">2014  </option>
+				  <option value="5">2013 </option>
+				  <option value="6">2012 </option>
+				  <option value="7">2011 </option>
+				  <option value="8">2010 </option>
+				</select>
+				 <br/>
+	Gender: <select name="gendertxt">
+            <option value="-1">--Gender-- </option>
+            <option value="1">MALE</option>
+            <option value="1">FEMALE</option>
+            </select>
+            <br/>  <br/>
+
+    <input type="button" value="Submit" onclick="valid()" /> &nbsp;
+    <input type="button" value="Reset" onclick="Reset()" />
+</form>
+</body>
+</html>
